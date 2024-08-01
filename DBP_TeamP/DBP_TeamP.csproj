@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{095C2A72-A4B2-4BF6-9781-98E3504E65CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBP_TeamP</RootNamespace>
+    <AssemblyName>DBP_TeamP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\oraclexe\app\oracle\product\11.2.0\server\odp.net\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PIG1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PIG1.Designer.cs">
+      <DependentUpon>PIG1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PIG2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PIG2.Designer.cs">
+      <DependentUpon>PIG2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PIG3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PIG3.Designer.cs">
+      <DependentUpon>PIG3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PIG4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PIG4.Designer.cs">
+      <DependentUpon>PIG4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InjureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>InjureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialF.Designer.cs">
+      <DependentUpon>FinancialF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeagueMatchM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeagueMatchM.Designer.cs">
+      <DependentUpon>LeagueMatchM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchAdd.Designer.cs">
+      <DependentUpon>MatchAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchMain.designer.cs">
+      <DependentUpon>MatchMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchSAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchSAU.Designer.cs">
+      <DependentUpon>MatchSAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubFinF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubFinF.Designer.cs">
+      <DependentUpon>SubFinF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamM.Designer.cs">
+      <DependentUpon>TeamM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FinancialF.resx">
+      <DependentUpon>FinancialF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PIG1.resx">
+      <DependentUpon>PIG1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PIG2.resx">
+      <DependentUpon>PIG2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PIG3.resx">
+      <DependentUpon>PIG3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PIG4.resx">
+      <DependentUpon>PIG4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>InjureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeagueMatchM.resx">
+      <DependentUpon>LeagueMatchM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchAdd.resx">
+      <DependentUpon>MatchAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchMain.resx">
+      <DependentUpon>MatchMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchSAU.resx">
+      <DependentUpon>MatchSAU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SubFinF.resx">
+      <DependentUpon>SubFinF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamM.resx">
+      <DependentUpon>TeamM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
